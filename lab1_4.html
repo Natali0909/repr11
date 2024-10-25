@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1.4 - Формування динамічних сторінок</title>
+</head>
+<body>
+
+<script>
+    // Введення заголовка і тексту через діалогові вікна
+    let headerText = prompt("Введіть заголовок для сторінки:");
+    let paragraphText = prompt("Введіть текст для абзацу:");
+
+    // Очищення сторінки та виведення результату
+    document.body.innerHTML = ""; // Очищаємо сторінку
+    document.write("<h1>" + headerText + "</h1>");
+    document.write("<p>" + paragraphText + "</p>");
+    document.write("<p>Дата і час: " + new Date().toLocaleString() + "</p>");
+</script>
+
+<!-- Кнопка повернення на базову сторінку -->
+<button onclick="window.location.href='index.html'">Повернутися на базову сторінку</button>
+
+</body>
+</html>

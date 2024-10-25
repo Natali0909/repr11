@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1.3 - Обчислення площі і периметра n-кутника</title>
+</head>
+<body>
+
+<script>
+    let n = parseInt(prompt("Введіть кількість сторін n-кутника:"));
+    let R = parseFloat(prompt("Введіть радіус описаного кола:"));
+
+    let perimeter = 2 * n * R * Math.sin(Math.PI / n);
+    let area = (n * Math.pow(R, 2) * Math.sin((2 * Math.PI) / n)) / 2;
+
+    alert("Периметр n-кутника: " + perimeter.toFixed(2) + "\n" +
+          "Площа n-кутника: " + area.toFixed(2));
+</script>
+
+<button onclick="window.location.href='index.html'">Повернутися на базову сторінку</button>
+
+</body>
+</html>

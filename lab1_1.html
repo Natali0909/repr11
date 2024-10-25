@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1.1 - Діалогові вікна</title>
+</head>
+<body>
+
+<script>
+    // Виведення вікна із запитом до користувача
+    let userName = prompt("Введіть ваше ім'я:");
+    if (userName) {
+        alert("Привіт, " + userName + "! Ласкаво просимо до JavaScript!");
+    } else {
+        alert("Ви не ввели ім'я, спробуйте ще раз.");
+    }
+</script>
+
+<!-- Кнопка повернення на базову сторінку -->
+<button onclick="window.location.href='index.html'">Повернутися на базову сторінку</button>
+
+</body>
+</html>
